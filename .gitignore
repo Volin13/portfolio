@@ -1,0 +1,32 @@
+# Node modules
+node_modules/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build directory
+dist/
+
+# Temporary files
+*.tmp
+*.swp
+
+# VSCode settings
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+bundle.js
+bundle.js.map
+
+# Sass cache
+.sass-cache/
+
+# IDE files
+.idea/
+*.iml
