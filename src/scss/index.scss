@@ -1,9 +1,15 @@
-@import "~node_modules/modern-normalize/modern-normalize.css";
+@import '../../node_modules/modern-normalize/modern-normalize.css';
 
-@import "./utils/variables";
+@import './utils/variables';
 
-// @import './base/base';
-// @import './base/container';
+@import './base/base';
+@import './base/body';
+@import './base/container';
+
+@import './components/logo';
+@import './components/header';
+@import './components/main';
+@import './components/footer';
 // @import '../../node_modules/swiper/swiper-vars.scss';
 // @import '../../node_modules/swiper/swiper.scss';
 // @import './components/main_btn';

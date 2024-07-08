@@ -1,0 +1,59 @@
+<main class="hero">
+  <div>
+    <div class="heroTextSection">
+      <button class="heroTextSection__helloBtn">Hello!</button>
+      <div class="heroTextSection__textThumb">
+        <h1 class="heroTextSection__mainTitle">
+          Привіт, моє ім'я Кухаришин Олег
+        </h1>
+        <p class="heroTextSection__text">
+          I am a passionate and experienced web designer, dedicated to creating
+          visually stunning and highly functional websites. Explore my portfolio
+          to see the power of effective design in action
+        </p>
+      </div>
+      <div class="heroTextSection__btnGroup">
+        <button class="heroTextSection__btn">Hello!</button>
+        <button class="heroTextSection__btn">Hello!</button>
+      </div>
+    </div>
+  </div>
+  <div class="hero__imageContainer">
+    <picture>
+      <!-- ../assets/main/containerhq.jpg 2x
+      ../assets/main/containertablethq.jpg 2x
+      ../assets/main/containerMobilehq.jpg 2x -->
+      <source
+        srcset="../assets/main/container.jpg 1x"
+        type="image/avif"
+        media="(min-width:1920px)"
+      />
+      <source
+        srcset="../assets/main/containertablet.jpg 1x"
+        type="image/avif"
+        media="(min-width:767px)"
+      />
+      <source
+        srcset="../assets/main/containerMobile.jpg 1x"
+        type="image/avif"
+        media="(max-width:767px)"
+      />
+      <img
+        src="../assets/main/container.jpg"
+        alt="photo background"
+        class="hero__imageBackground"
+      />
+    </picture>
+    <svg class="hero__icon hero__icon-top">
+      <use href="../assets/sprite.svg#icon-blocksMainImg"></use>
+    </svg>
+    <svg class="hero__icon hero__icon-bottom">
+      <use href="../assets/sprite.svg#icon-blocksMainImg"></use>
+    </svg>
+    <img
+      class="hero__photo"
+      src="../assets/main/oleh.png"
+      alt="Oleh Kukharyshyn photo"
+    />
+  </div>
+</main>

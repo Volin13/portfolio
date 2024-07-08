@@ -1,0 +1,205 @@
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid $secondary_gray;
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+  }
+
+  &__navLink {
+    padding: 10px;
+
+    border-radius: 8px;
+    &-accent {
+      background-color: $primary_accent_color;
+      padding-right: 40px;
+    }
+    &__navLink:hover,
+    &__navLink:focus,
+    &__navLink:active {
+      background-color: $secondary_bg_color;
+      scale: 1.15;
+    }
+  }
+  &__telText {
+    position: relative;
+  }
+  &__telIcon {
+    fill: white;
+    height: 30px;
+    width: 30px;
+  }
+}
+.header__telText::after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 2;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  // background-image: url('../assets/main/container.jpg');
+  background-image: url('../assets/header/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg');
+  background-size: cover;
+  fill: white;
+  stroke: white;
+  transition: transform 0.3s;
+}
+// .header__telText::after {
+//   animation: vibrate 0.1s infinite;
+// }
+
+.header__navBtn:hover .header__telText::after,
+.header__navBtn:focus .header__telText::after,
+.header__navBtn:active .header__telText::after {
+  animation: vibrate 0.3s infinite;
+}
+
+// MENU
+.menu-open body {
+  overflow: hidden;
+}
+.menu__body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  transition: left 300ms;
+  z-index: 4;
+  background-color: $bg_color;
+  overflow: auto;
+}
+.menu-open .menu__body {
+  left: 0;
+}
+.icon-menu {
+  display: block;
+  position: relative;
+  z-index: 5;
+  width: 30px;
+  height: 30px;
+}
+.icon-menu-line,
+.icon-menu::before,
+.icon-menu::after {
+  content: '';
+  position: absolute;
+  background-color: $primary_black;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  z-index: 4;
+  transition: all 300ms;
+}
+.icon-menu::before {
+  top: 0;
+}
+.icon-menu::after {
+  bottom: 0;
+}
+.icon-menu-line {
+  top: calc(50% - 1px);
+}
+.menu-open .icon-menu::before {
+  top: calc(50% - 1px);
+  transform: rotate(-45deg);
+}
+.menu-open .icon-menu::after {
+  bottom: calc(50% - 2px);
+  transform: rotate(45deg);
+}
+.menu-open .icon-menu-line {
+  left: 50%;
+  width: 0;
+}
+
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    &__navigation {
+      gap: 15px;
+    }
+  }
+}
+@media screen and (min-width: 990px) {
+  .header {
+    &__navigation {
+      display: flex;
+      position: static;
+      transform: translate(0, 0);
+      width: auto;
+      flex-direction: row;
+      gap: 25px;
+      font-size: 18px;
+    }
+    .menu__body {
+      position: static;
+      overflow: visible;
+      width: auto;
+      padding-top: 0;
+    }
+    .icon-menu,
+    .menu-icon {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    &__navigation {
+      gap: 55px;
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &__navigation {
+      font-size: 24px;
+
+      gap: 70px;
+    }
+  }
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(-1px, -1px) translateY(-50%);
+  }
+  25% {
+    transform: translate(1px, 1px) translateY(-50%);
+  }
+  50% {
+    transform: translate(-1px, 1px) translateY(-50%);
+  }
+  75% {
+    transform: translate(1px, -1px) translateY(-50%);
+  }
+  100% {
+    transform: translate(0, 0) translateY(-50%);
+  }
+}
