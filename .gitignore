@@ -8,7 +8,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Build directory
-dist/
+/dist
 
 # Temporary files
 *.tmp
