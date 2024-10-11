@@ -1,0 +1,44 @@
+{{#each items}}
+  <div class='samples__item mainSwiper__slide swiper-slide' style='height: 97%'>
+    <a target='_blank' href='projects/{{id}}'>
+      <h3 class='mainSwiper__title'>{{this.title}}</h3>
+    </a>
+    <div
+      id='slider-template-{{this.id}}'
+      data-id='{{this.id}}'
+      class='swiper-container mainSlider mainSlider-{{this.id}}'
+    >
+      <div class='swiper-wrapper mainSlider__slide'>
+        {{#each this.slides}}
+          <div
+            class='swiper-slide swiper-zoom-container'
+            style='transition: opacity 1s ease-in-out'
+          >
+            <a target='_blank' href='projects/{{../id}}?lang={{../currentLang}}'>
+              <img src={{this.src}} alt={{this.alt}} loading='lazy' />
+              <div class='swiper-lazy-preloader'></div>
+            </a>
+            <a target='_blank' href='{{link}}' class='mainSlider__link'>
+            </a>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class='swiper-container thumbnailSlider thumbnailSlider-{{this.id}}'>
+      <div class='swiper-wrapper thumbnailSlider-wrapper'>
+        {{#each this.slides}}
+          <div class='swiper-slide thumbnailSlider-slide'>
+            <img
+              class='thumbnailSlider-image'
+              src={{this.src}}
+              alt={{this.alt}}
+              loading='lazy'
+            />
+            <div class='swiper-lazy-preloader'></div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+{{/each}}

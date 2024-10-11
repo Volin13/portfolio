@@ -1,0 +1,177 @@
+.about {
+  padding-bottom: 30px;
+  &__text {
+    text-indent: 2em;
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__subTitle {
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  &__textSection {
+    margin-bottom: 40px;
+  }
+}
+
+.skills {
+  &__list {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    font-size: 17px;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    list-style-type: none;
+    padding: 0;
+    &-used {
+      margin-bottom: 25px;
+    }
+  }
+  &__title {
+    margin-bottom: 25px;
+  }
+  &__listTitle {
+    text-transform: capitalize;
+  }
+  &__listItem {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $secondary_bg_color;
+    border-radius: 10px;
+    padding: 20px;
+    padding-right: 5px;
+    border: 1px solid $secondary_gray;
+  }
+}
+.skills__listItem-used::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+}
+
+$skills: html, bootstrap, css3, scss, figma, git, js, react, redux, mobx,
+  mongoDb, nodejs, postgresql;
+@each $skill in $skills {
+  $index: index($skills, $skill);
+  .skills__listItem-used:nth-child(#{$index})::before {
+    background: url('../assets/skills/#{$skill}.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+$newSkills: typescript, graphql, jquery;
+@each $newSkill in $newSkills {
+  $index: index($newSkills, $newSkill);
+  .skills__listItem-new:nth-child(#{$index})::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+
+    background: url('../assets/skills/#{$newSkill}.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 768px) {
+  .skills {
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      width: 80%;
+    }
+    &__listItem {
+      justify-content: center;
+      padding: 20px;
+      padding-left: 45px;
+    }
+  }
+  .skills__listItem-used::before {
+    left: 15px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .skills__listItem-used::before {
+    left: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .skills {
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .skills {
+    &__list {
+      font-size: 24px;
+    }
+    &__listItem {
+      padding: 20px;
+    }
+  }
+  .skills__listItem-used::before {
+    left: 40px;
+    height: 35px;
+    width: 35px;
+  }
+
+  $newSkills: typescript, graphql, jquery;
+  @each $newSkill in $newSkills {
+    $index: index($newSkills, $newSkill);
+    .skills__listItem-new:nth-child(#{$index})::before {
+      left: 40px;
+      height: 35px;
+      width: 35px;
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .skills {
+    &__list {
+      font-size: 26px;
+    }
+    &__listItem {
+      padding: 20px;
+    }
+  }
+  .skills__listItem-used::before {
+    left: 50px;
+    height: 40px;
+    width: 40px;
+  }
+
+  $newSkills: typescript, graphql, jquery;
+  @each $newSkill in $newSkills {
+    $index: index($newSkills, $newSkill);
+    .skills__listItem-new:nth-child(#{$index})::before {
+      left: 50px;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

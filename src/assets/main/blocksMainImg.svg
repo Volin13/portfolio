@@ -1,3 +1,16 @@
-<svg width="328px" height="329px" viewBox="0 0 328 329" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M77 -8C77 -14.6274 71.6274 -20 65 -20H-48C-54.6274 -20 -60 -14.6274 -60 -8V101C-60 107.627 -54.6274 113 -48 113H42C48.6274 113 54 118.373 54 125V184C54 190.627 48.6274 196 42 196H-48C-54.6274 196 -60 201.373 -60 208V317C-60 323.627 -54.6274 329 -48 329H65C71.6274 329 77 323.627 77 317V237C77 230.373 82.3726 225 89 225H179C185.627 225 191 219.627 191 213V125C191 118.373 196.373 113 203 113H316C322.627 113 328 107.627 328 101V-8C328 -14.6274 322.627 -20 316 -20H203C196.373 -20 191 -14.6274 191 -8V80C191 86.6274 185.627 92 179 92H89C82.3726 92 77 86.6274 77 80V-8Z" fill="#EEEBE5"/>
+<svg width="328px" height="329px" viewBox="0 0 328 329" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="1" result="offsetblur"/>
+      <feFlood flood-color="#33333359"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <path filter="url(#drop-shadow)" fill-rule="evenodd" clip-rule="evenodd" d="M77 -8C77 -14.6274 71.6274 -20 65 -20H-48C-54.6274 -20 -60 -14.6274 -60 -8V101C-60 107.627 -54.6274 113 -48 113H42C48.6274 113 54 118.373 54 125V184C54 190.627 48.6274 196 42 196H-48C-54.6274 196 -60 201.373 -60 208V317C-60 323.627 -54.6274 329 -48 329H65C71.6274 329 77 323.627 77 317V237C77 230.373 82.3726 225 89 225H179C185.627 225 191 219.627 191 213V125C191 118.373 196.373 113 203 113H316C322.627 113 328 107.627 328 101V-8C328 -14.6274 322.627 -20 316 -20H203C196.373 -20 191 -14.6274 191 -8V80C191 86.6274 185.627 92 179 92H89C82.3726 92 77 86.6274 77 80V-8Z" fill="#EEEBE5"/>
 </svg>

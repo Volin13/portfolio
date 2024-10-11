@@ -1,0 +1,16 @@
+{
+  "skillItems": [
+    { "title": "html" },
+    { "title": "bootstrap" },
+    { "title": "css3" },
+    { "title": "scss" },
+    { "title": "figma" },
+    { "title": "git" },
+    { "title": "js" },
+    { "title": "react" },
+    { "title": "redux" },
+    { "title": "mobX" },
+    { "title": "mongoDb" },
+    { "title": "postgreSQL" }
+  ]
+}

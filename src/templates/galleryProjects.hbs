@@ -1,0 +1,30 @@
+{{#each items}}
+  <li class='gallery__listItem' style='--item-index: {{@index}}'>
+    <div class='gallery__itemThumb'>
+      <a target='_blank' href='{{link}}'>
+        <h2 class='gallery__itemTitle'>{{title}}</h2>
+      </a>
+
+      <ul class='gallery__itemTechList'>
+        {{#each tech}}
+          <li class='gallery__itemTechItem'>
+            <div
+              class='gallery__itemTechItem gallery__itemTechItem-text'
+              style='--tech-index: {{@index}}'
+            >{{techName}}</div>
+          </li>
+        {{/each}}
+      </ul>
+      <a
+        href='projects/{{id}}?lang={{currentLang}}'
+        class='gallery__showMore'
+      >                      {{../translations.more}}
+</a>
+    </div>
+    <img
+      src='{{slides.[0].src}}'
+      alt='{{slides.[0].alt}}'
+      class='gallery__listImg'
+    />
+  </li>
+{{/each}}

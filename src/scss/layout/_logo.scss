@@ -1,0 +1,47 @@
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  z-index: 5;
+  --s: 0.1em; // Висота лінії під текстом
+  --c: #5700ff; // Колір заливки тексту (помаранчевий)
+  --text-color: #333; // Основний колір тексту (темно-сірий)
+  --p: 0%; // Змінна для управління прогресом заливки
+
+  color: var(--text-color); // Основний колір тексту
+  padding-bottom: var(--s);
+  background:
+    linear-gradient(90deg, var(--c) 50%, transparent 0) calc(100% - var(--p)) /
+      200% 100%,
+    // Заливка тексту іншим кольором
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--p) var(--s) no-repeat; // Лінія під текстом
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+  color: #7833ff;
+  background-color: transparent;
+}
+
+.logo:hover,
+.logo:focus {
+  --p: 100%; // Змінюється на 100% при наведенні, запускаючи анімацію
+  color: transparent;
+}
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 990px) {
+  .logo {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1440px) {
+  .logo {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 1920px) {
+}

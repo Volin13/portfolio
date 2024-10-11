@@ -5,11 +5,16 @@
 @import './base/base';
 @import './base/body';
 @import './base/container';
+@import 'swiper/css';
 
-@import './components/logo';
-@import './components/header';
-@import './components/main';
-@import './components/footer';
+@import './layout/logo';
+@import './layout/header';
+@import './layout/main';
+@import './layout/samples';
+@import './layout/about';
+@import './layout/footer';
+@import './layout/projectDetails';
+@import './layout/gallery';
 // @import '../../node_modules/swiper/swiper-vars.scss';
 // @import '../../node_modules/swiper/swiper.scss';
 // @import './components/main_btn';

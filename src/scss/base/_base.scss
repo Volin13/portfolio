@@ -121,12 +121,13 @@ h4,
 h5,
 h6 {
   font-weight: 600;
+  text-align: center;
 }
 h1 {
-  font-size: 38px;
+  font-size: 35px;
 }
 h2 {
-  font-size: 28px;
+  font-size: 24px;
 }
 h3 {
   font-size: 18px;
@@ -144,14 +145,38 @@ a {
 address {
   font-style: normal;
 }
+h1 {
+  color: $primary_black;
+}
+h2 {
+  color: $primary_gray;
+}
+.section {
+  padding-top: 20px;
+}
+p {
+  text-indent: 10px;
+}
 
 @media screen and (min-width: 375px) {
 }
 @media screen and (min-width: 768px) {
+  .section {
+    padding-top: 30px;
+  }
+  p {
+    text-indent: 20px;
+  }
 }
 @media screen and (min-width: 990px) {
 }
 @media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 40px;
+  }
+  p {
+    text-indent: 30px;
+  }
 }
 @media screen and (min-width: 1440px) {
   h1 {
@@ -165,6 +190,9 @@ address {
   h3 {
     font-size: 20px;
   }
+  .section {
+    padding-top: 50px;
+  }
 }
 @media screen and (min-width: 1920px) {
   h1 {
@@ -176,7 +204,10 @@ address {
     margin-bottom: 50px;
   }
   h3 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
+  }
+  .section {
+    padding-top: 60px;
   }
 }

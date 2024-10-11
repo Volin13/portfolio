@@ -1,10 +1,12 @@
+if (module.hot) {
+  module.hot.accept('./index.js', function () {
+    console.log('Index module updated.');
+  });
+}
 import '../scss/index.scss';
-import '../js/menuScript';
-
-import headerHTML from '../partials/header.html';
-import mainHTML from '../partials/main.html';
-import footerHTML from '../partials/footer.html';
-
-document.getElementById('header').innerHTML = headerHTML;
-document.getElementById('main').innerHTML = mainHTML;
-document.getElementById('footer').innerHTML = footerHTML;
+import '../js/main/loadHtml';
+import '../js/main/menuScript';
+import '../js/main/hbsLoader';
+import '../js/main/samplesSlider';
+import '../js/main/samplesItem';
+import '../js/main/languageScript';

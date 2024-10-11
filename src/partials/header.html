@@ -1,29 +1,42 @@
-<header class="container header">
-  <a href="*" class="logo">Кухаришин Олег</a>
-  <div class="menu__body">
-    <nav>
-      <ul class="header__navigation">
-        <li class="header__navBtn header__navLink">
-          <a data-goto="*" href="#">Головна</a>
-        </li>
-        <li class="header__navBtn header__navLink">
-          <a data-goto="*" href="#">Про мене</a>
-        </li>
-        <li class="header__navBtn header__navLink">
-          <a data-goto="*" href="#">Портфоліо</a>
-        </li>
-        <li class="header__navBtn header__navLink">
-          <a data-goto="*" href="#">Контакти</a>
-        </li>
-        <li>
-          <a href="#" class="header__navBtn header__navBtn-accent">
-            <span class="header__telText">Напишіть мені</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+<div class="header-thumb">
+  <div class="container header">
+    <a href="/" class="logo"> Кухаришин Олег</a>
+    <div class="menu__body">
+      <nav>
+        <ul class="header__navigation">
+          <li class="header__navLink">
+            <a href="/">Головна</a>
+          </li>
+          <li class="header__navLink">
+            <a data-goto="about" href="#">Про мене</a>
+          </li>
+          <li class="header__navLink">
+            <a href="../gallery.html">Портфоліо</a>
+          </li>
+          <li class="header__navLink">
+            <a data-goto="contacts" href="#">Контакти</a>
+          </li>
+          <li>
+            <a
+              href="https://t.me/olegkukharyshyn"
+              class="header__navLink header__navLink-accent"
+            >
+              <span class="header__telText">Напишіть мені</span>
+            </a>
+          </li>
+          <li>
+            <a href="?lang=en" class="header__navLang-button" id="lang-en"
+              >en</a
+            >
+            <a href="?lang=uk" class="header__navLang-button" id="lang-uk"
+              >ua</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <button class="icon-menu menu-icon" type="button">
+      <span class="icon-menu-line"></span>
+    </button>
   </div>
-  <button class="icon-menu menu-icon" type="button">
-    <span class="icon-menu-line"></span>
-  </button>
-</header>
+</div>

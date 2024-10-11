@@ -1,0 +1,661 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "currentLang": "en",
+      "title": "Web Store",
+      "mainImgDesktop": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723743046/portf/web-store/desktop_gorl1y.png",
+      "mainImgTablet": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723742913/portf/web-store/tablet_ja18tz.png",
+      "mainImgMobile": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723742911/portf/web-store/mobile_r8rava.png",
+      "anchor": "https://github.com/Volin13/web-store",
+      "link": "https://web-store-1-syzj.onrender.com/",
+      "description": "Website of an online store of electronic and household goods. Was inspired by a YouTube video from Ulbi TV, my first fullstack project. In addition to the basis taken from the channel, the following were implemented: a shopping cart, a comment section, a product registration page, product filtering, order status tracking, product page editing, preloaders, generally improved interface design and better UI solutions. Saving images in the Cloudinary cloud environment has been implemented, NovaPostAPI is used for the list of regions/cities/departments in the product order form. For security, the access and reset token exchange mechanism is used. The project is big, during its development I learned a lot and improved my skills and understanding of web development. You will have to wait at least 50 seconds before following the link - this is a feature of using the free display on the Render service.",
+      "slides": [
+        {
+          "id": 1,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723742915/portf/web-store/1_pnhzzf.jpg",
+          "alt": "Main page",
+          "slideTitle": "Main page",
+          "slideDescription": "Contains a list of products with notes on availability and discounts, their names and prices. Implemented filtering of products by brands, types, price and rating (in ascending/descending order). In the upper part of the screen there is a search field by product name. In the lower part there is a block of links to social networks."
+        },
+        {
+          "id": 2,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723742917/portf/web-store/2_sgpxvc.jpg",
+          "alt": "Front page stub preloaders",
+          "slideTitle": "Plug preloaders",
+          "slideDescription": "When loading data from the server, stub preloaders for text and images are displayed"
+        },
+        {
+          "id": 3,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723742918/portf/web-store/3_gm5o9v.jpg",
+          "alt": "Filter by brands",
+          "slideTitle": "Filter by brands + price/rating",
+          "slideDescription": "Work of filtering products by brands. The pressed brand becomes the first in the list of brands and changes color. The list of brands can be expanded by clicking on the button. In the side menu there are toggle switches for filtering by price/rating."
+        },
+        {
+          "id": 4,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723742921/portf/web-store/4_wpuff8.jpg",
+          "alt": "Filter by types",
+          "slideTitle": "Filtering by types + name",
+          "slideDescription": "The work of filtering goods by type. The pressed type becomes the first in the list of types and changes color. The list of types can be expanded by clicking on the button. When hovering over the search icon, the field entry of names expands."
+        },
+        {
+          "id": 5,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723742945/portf/web-store/7_v2hwbs.jpg",
+          "alt": "Side menu",
+          "slideTitle": "Side menu",
+          "slideDescription": "Clicking on the menu button in the page header opens a side menu. The menu contains sections: user info (and its change), a page for tracking the purchase status, the administrator menu (only for the administrator account), the logout button"
+        },
+        {
+          "id": 6,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723742958/portf/web-store/12_izoyjg.jpg",
+          "alt": "User menu",
+          "slideTitle": "User menu",
+          "slideDescription": "The user menu displays the user's nickname and avatar, the user can change them. When changing the avatar, validation takes place for the type of canteen and its size. When changing a nickname, validation takes place (the user cannot enter special characters), and the uniqueness of the nickname is also checked."
+        },
+        {
+          "id": 7,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723742957/portf/web-store/11_dek6pn.jpg",
+          "alt": "Basket",
+          "slideTitle": "Basket",
+          "slideDescription": "The cart button shows the number of products in the cart, the number itself is stored in session storage. When you click on the button, a modal window opens with a list of purchases, the amount and the amount to be paid. It is possible to clear the basket, change the quantity of an individual product or remove a product from the list. When clicking on the checkout button, the user will be taken to a page with a form that must be filled out to complete the purchase."
+        },
+        {
+          "id": 8,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723742922/portf/web-store/5_ixymc9.jpg",
+          "alt": "Device page",
+          "slideTitle": "Device page",
+          "slideDescription": "The device page contains an image of the device, name, price, order button, device specifications and a comment section. When you click on the photo of the product, a modal window will open with a slider for photos of the device in a larger format. The characteristics of the device can be expanded or scrolled. The edit button is available only to the site administrator. When you click on the product order button, the picture changes (which depends on the number of products in the cart), and a notification appears in the upper right corner of the screen."
+        },
+        {
+          "id": 9,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723742925/portf/web-store/6_a83vlw.jpg",
+          "alt": "Device editing window",
+          "slideTitle": "Device editing window",
+          "slideDescription": "The device editing window allows the administrator to edit: product name, brand/type, presence of discount/availability sticker, price/new price with discount, rating, edit feature list, main image and secondary images."
+        },
+        {
+          "id": 10,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723742947/portf/web-store/8_xicnbx.jpg",
+          "alt": "Admin panel",
+          "slideTitle": "Admin panel",
+          "slideDescription": "The admin panel contains buttons that open modal windows with the ability to: add a new type, add a brand, device, view comments, edit and delete them, view orders made"
+        },
+        {
+          "id": 11,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723742962/portf/web-store/13_eqcdlw.jpg",
+          "alt": "User order history",
+          "slideTitle": "User order history",
+          "slideDescription": "The user's order history shows the user's orders, their status (identification by color), also by clicking on the order, you can view the order and the data entered during registration"
+        },
+        {
+          "id": 12,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723742951/portf/web-store/9_xn89on.jpg",
+          "alt": "Modal menu with user comments",
+          "slideTitle": "User comments",
+          "slideDescription": "This modal contains all the comments on the site. An administrator can view, edit or delete comments. It is also possible to search for comments by date."
+        },
+        {
+          "id": 13,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723743643/portf/web-store/15_wp3z0n.jpg",
+          "alt": "Order registration form",
+          "slideTitle": "Order registration form",
+          "slideDescription": "The order form contains the following fields: name, surname, e-mail, telephone, region, city, department, an additional field with a comment. All fields have appropriate validation. NovaPostAPI was used for the dropdown lists in the delivery address section. The list of regions is downloaded once every six months (if the old one is available) and stored in the local environment."
+        },
+        {
+          "id": 14,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723743342/portf/web-store/14_wvdyd2.jpg",
+          "alt": "Validation of the order form",
+          "slideTitle": "Validation of the order form",
+          "slideDescription": "Each field has its own validation rules, except for the comment field, where there is only a length limit. Delivery address fields must be selected from the drop-down list, mandatory."
+        },
+        {
+          "id": 15,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723743618/portf/web-store/16_mfhp7n.jpg",
+          "alt": "Device image slider",
+          "slideTitle": "Device image slider",
+          "slideDescription": "When you click on the product image on the product page, a modal window with a larger image slider appears."
+        }
+      ],
+      "tech": [
+        {
+          "id": 1,
+          "techName": "react",
+          "svgName": "react",
+          "useDescription": "A JavaScript library for building user interfaces that allows you to build components and efficiently manage state for dynamic web applications."
+        },
+        {
+          "id": 2,
+          "techName": "formik",
+          "svgName": "formik",
+          "useDescription": "A library for state management and validation of forms in React, which simplifies working with forms and their processing."
+        },
+        {
+          "id": 3,
+          "techName": "yup",
+          "svgName": "yup",
+          "useDescription": "A JavaScript data validation library that allows you to create schemas for checking forms and objects against defined rules."
+        },
+        {
+          "id": 4,
+          "techName": "axios",
+          "svgName": "axios",
+          "useDescription": "A library for managing state in JavaScript/React applications that provides automatic tracking of data changes and user interface updates."
+        },
+        {
+          "id": 5,
+          "techName": "mobx",
+          "svgName": "mobx",
+          "useDescription": "A library for managing state in JavaScript/React applications that provides automatic tracking of data changes and user interface updates.."
+        },
+        {
+          "id": 6,
+          "techName": "bootstrap",
+          "svgName": "react",
+          "useDescription": "A component library for React that provides integration with Bootstrap to create a responsive user interface."
+        },
+        {
+          "id": 7,
+          "techName": "jwt-decode",
+          "svgName": "react",
+          "useDescription": "A library for decoding JSON Web Tokens (JWT) without the need for validation or requesting a server"
+        },
+        {
+          "id": 8,
+          "techName": "dotEnv",
+          "svgName": "dotenv",
+          "useDescription": "A library for loading environment variables from an .env file into a Node.js application, allowing you to store sensitive data separately from code."
+        },
+        {
+          "id": 9,
+          "techName": "express",
+          "svgName": "express",
+          "useDescription": "A framework for Node.js that simplifies the creation of server applications and the processing of HTTP requests."
+        },
+        {
+          "id": 10,
+          "techName": "googleapis",
+          "svgName": "google",
+          "useDescription": "The official client for accessing Google APIs, which allows you to interact with various Google services, such as Google Drive, Gmail, Google Sheets, etc., with Node.js."
+        },
+        {
+          "id": 11,
+          "techName": "jsonwebtoken",
+          "svgName": "jsonwebtoken",
+          "useDescription": "A library for generating and validating JSON Web Tokens (JWT) in Node.js that provides an authentication and authorization mechanism."
+        },
+        {
+          "id": 12,
+          "techName": "sequelize",
+          "svgName": "sequelize",
+          "useDescription": "ORM (Object-Relational Mapping) for Node.js, which allows interaction with relational databases (MySQL, PostgreSQL, SQLite, MSSQL) using JavaScript objects."
+        },
+        {
+          "id": 13,
+          "techName": "moment",
+          "svgName": "moment",
+          "useDescription": "A JavaScript library for working with dates and times that simplifies formatting, parsing, and manipulating dates"
+        },
+        {
+          "id": 14,
+          "techName": "prop-types",
+          "svgName": "react",
+          "useDescription": "A library for checking the types of properties (props) in React components, which helps to ensure the correctness of the data passed to the components."
+        },
+        {
+          "id": 15,
+          "techName": "react-router-dom",
+          "svgName": "react",
+          "useDescription": "A library for implementing routing in React applications, which allows you to create routes and manage navigation between various components and pages."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "currentLang": "en",
+
+      "title": "SPYRO GYM",
+      "mainImgDesktop": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1721741011/portf/SPYRO/spyroDeskpot_iscxrl.png",
+      "mainImgTablet": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1721741011/portf/SPYRO/tablet_1_ne0lhp.png",
+      "mainImgMobile": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1722248290/portf/SPYRO/spyroMobile_sad6bw.png",
+      "anchor": "https://github.com/Volin13/gym-training",
+      "link": "https://volin13.github.io/gym-training/",
+
+      "description": "The SPYRO GYM landing page contains basic information about the facility, provides an opportunity to leave the user's personal information for further communication, or sign up for a trial workout. The development of the project increased my skills in layout, styling and css animations. I also gained valuable experience working with the QuintaDB online database service. The implementation of google-maps in the project was also a valuable lesson for me.",
+      "slides": [
+        {
+          "id": 1,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1721652247/portf/SPYRO/spyro1_dfg1v0.bmp",
+          "alt": "Main image SPYRO GYM",
+          "slideTitle": "Main image",
+          "slideDescription": "Contains a tagline and a short ad for the gym. When you click the 'Start free trail' button, a modal window opens with a form for filling in personal data. In the header there is a 'Contacts' button with a modal window that contains all the necessary information to contact/get to the gym."
+        },
+        {
+          "id": 2,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1721652248/portf/SPYRO/spyro2_fiocs9.jpg",
+          "alt": "Modal window with contacts",
+          "slideTitle": "Contacts",
+          "slideDescription": "When you click the 'Start free trail' button, a modal window opens with a form for filling in personal data. In the header there is a 'Contacts' button with a modal window that contains all the necessary information to contact/get to the gym. You can also fill out the form with your own data, after which the manager will contact the client himself."
+        },
+        {
+          "id": 3,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1721652245/portf/SPYRO/spyro6_vt5hln.jpg",
+          "alt": "List of instructors SPYRO GYM",
+          "slideTitle": "List of instructors SPYRO GYM",
+          "slideDescription": "The list of instructors includes a photo of each instructor, when you click on it, a short bio of the trainer is highlighted. On smaller device extensions, the full list is hidden, it expands after clicking on the button."
+        },
+        {
+          "id": 4,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1721652245/portf/SPYRO/spyro4_ml3kps.jpg",
+          "alt": "List of classes at SPYRO GYM",
+          "slideTitle": "List of classes at SPYRO GYM",
+          "slideDescription": "The list contains brief information about each lesson: type, number of participants, name, time, lesson number, difficulty level. Each list item has two options - learn more and sign up for a trial class. When you click on the 'learn more' button, a modal window will open with brief information about the class and the class schedule. When you click on the 'start a trial lesson' button, a modal window will open in which there will be a form for filling in personal data with the possibility of changing the difficulty of the lesson. The list can be expanded to see all available lessons."
+        },
+        {
+          "id": 5,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1721652245/portf/SPYRO/spyro5_n74otp.jpg",
+          "alt": "Brief information about classes",
+          "slideTitle": "Brief information about classes",
+          "slideDescription": "When you click on the 'learn more' button in the list of classes, a modal window will open with brief information about the class and the class schedule."
+        },
+        {
+          "id": 6,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1721652244/portf/SPYRO/spyro3_amojsx.jpg",
+          "alt": "The main areas of activity of the gym",
+          "slideTitle": "The main areas of activity of the gym",
+          "slideDescription": "SPYRO GYM has 4 main areas of activity: gym, martial arts, zumba, yoga. When a direction is shown on the window, it expands and even a short description of the direction is available below, when clicking on the animated direction window."
+        },
+        {
+          "id": 7,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1721652245/portf/SPYRO/spyro7_qoq6hv.jpg",
+          "alt": "Slider with visitors' reviews.",
+          "slideTitle": "Feedback section",
+          "slideDescription": "The slider with visitors' reviews contains: a short review, rating, name and photo of the user."
+        }
+      ],
+      "tech": [
+        {
+          "id": 1,
+          "techName": "react",
+          "svgName": "react",
+          "useDescription": "A JavaScript library for building user interfaces that allows you to build components and efficiently manage state for dynamic web applications."
+        },
+        {
+          "id": 2,
+          "techName": "formik",
+          "svgName": "formik",
+          "useDescription": "A library for state management and validation of forms in React, which simplifies working with forms and their processing."
+        },
+        {
+          "id": 3,
+          "techName": "yup",
+          "svgName": "react",
+          "useDescription": "A JavaScript data validation library that allows you to create schemas for checking forms and objects against defined rules."
+        },
+        {
+          "id": 4,
+          "techName": "axios",
+          "svgName": "axios",
+          "useDescription": "A library for managing state in JavaScript/React applications that provides automatic tracking of data changes and user interface updates."
+        },
+        {
+          "id": 5,
+          "techName": "swiper",
+          "svgName": "swiper",
+
+          "useDescription": "A library for creating modern and responsive sliders and carousels on web pages, with the possibility of customization and support for various transition effects."
+        },
+        {
+          "id": 6,
+          "techName": "react-youtube",
+          "svgName": "react",
+          "useDescription": "A library for embedding and managing YouTube videos in React applications, which provides a simple API for interacting with the YouTube player."
+        },
+        {
+          "id": 7,
+          "techName": "react-google-maps",
+          "svgName": "react",
+          "useDescription": "A library for integrating Google Maps into React applications, which simplifies work with maps, markers and other elements of the Google Maps API."
+        },
+        {
+          "id": 8,
+          "techName": "dotEnv",
+          "svgName": "dotenv",
+          "useDescription": "A library for loading environment variables from an .env file into a Node.js application, allowing you to store sensitive data separately from code."
+        },
+        {
+          "id": 9,
+          "techName": "prop-types",
+          "svgName": "react",
+          "useDescription": "A library for checking the types of properties (props) in React components, which helps to ensure the correctness of the data passed to the components."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "currentLang": "en",
+
+      "title": "So-Yummy (team project)",
+      "mainImgDesktop": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718811/portf/So-Yummy/PC_kw7why.png",
+      "mainImgTablet": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718809/portf/So-Yummy/tablet_mcsvhe.png",
+      "mainImgMobile": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718806/portf/So-Yummy/mobile_igdgid.png",
+      "anchor": "https://github.com/Katya-Kondratchuk/So-Yummy",
+      "link": "https://soyummy.netlify.app/",
+
+      "description": "A large team project, the final project of training at GoIt courses. The site, which provides access to a large number of ready-made recipes (divided into categories), also has the function of creating your own recipe and saving it in the 'My Recipes' folder. Each recipe can be added to favorites and get a list of necessary purchases for cooking, this list will be available in a separate bundle. Registration takes place with email confirmation through the Sengrid resource, for authorization you can use a temporary email or my account (login: olegkukharishin@gmail.com, password: 1234567A). Other functions are also implemented: password change, authorization through Google, avatar/nickname change, all photos are stored on the cloud resource Cloudinary, search by recipe name is implemented, newsletter subscription, list of favorite recipes, dark/light site themes. I worked on the authorization/registration/welcome page, gained valuable experience in working with forms, validation, backend requests, animation on the authorization page was a separate initiative of mine. This project has a special place in my practice, I learned a lot while working on it and was satisfied with the work done.",
+      "slides": [
+        {
+          "id": 1,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718810/portf/So-Yummy/welcome_hununq.jpg",
+          "alt": "Welcome page",
+          "slideTitle": "Welcome page",
+          "slideDescription": "The welcome page offers the user to register an account or log in to an existing one, links take the user to the registration and authorization pages, respectively."
+        },
+        {
+          "id": 2,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718806/portf/So-Yummy/signIn_ftkfgt.jpg",
+          "alt": "Authorization page",
+          "slideTitle": "Authorization page",
+          "slideDescription": "Contains a form for entering personal data, form fields are validated, information is collected in an object and sent to the backend, in case of successful authorization, the user goes to the main page of the site. The image next to the authorization form is animated using CSS. There is also a password recovery option when clicking on the link under the 'forgot your password?' form, the user goes to the password recovery page, where he must enter his email address to which his password will be sent."
+        },
+        {
+          "id": 3,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718798/portf/So-Yummy/1_xz3dch.jpg",
+          "alt": "Main page",
+          "slideTitle": "Main page",
+          "slideDescription": "The main page contains navigation, a field for searching by the name of the recipe, and numerous recipes of dishes sorted by categories"
+        },
+        {
+          "id": 4,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718798/portf/So-Yummy/2_fp3tse.jpg",
+          "alt": "Main page (dark theme)",
+          "slideTitle": "Main page (dark theme)",
+          "slideDescription": "The site implements a dark theme for the convenience of users"
+        },
+        {
+          "id": 5,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718805/portf/So-Yummy/11_ijsiht.jpg",
+          "alt": "User menu",
+          "slideTitle": "User menu",
+          "slideDescription": "The user menu allows you to change the avatar and login, both fields are validated by type/size and uniqueness respectively."
+        },
+        {
+          "id": 6,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718803/portf/So-Yummy/10_rooigz.jpg",
+          "alt": "search results",
+          "slideTitle": "Search results by name/ingredients",
+          "slideDescription": "A search was implemented by the name of the dish or by the name of the ingredient, if the entered word is not found, the stub image will be displayed."
+        },
+        {
+          "id": 7,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718802/portf/So-Yummy/8_a9a9kp.jpg",
+          "alt": "List of favorite dishes",
+          "slideTitle": "List of favorite dishes",
+          "slideDescription": "In the window of dishes in the list of dishes, as well as on the page of the selected dish, it is possible to add dishes to the list of favorites, as well as to remove them"
+        },
+        {
+          "id": 8,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718798/portf/So-Yummy/3_vgl4sf.jpg",
+          "alt": "List of dishes",
+          "slideTitle": "List of dishes",
+          "slideDescription": "The list of dishes includes categories by time of consumption (breakfast, lunch, dinner, etc.) and by ingredients (chicken, pork, seafood, etc.). You can add the dish to your favorites by clicking on the heart, or put the dish as a favorite, after which it will increase its popularity and place in the issue."
+        },
+        {
+          "id": 9,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718799/portf/So-Yummy/4_c5af23.jpg",
+          "alt": "Food list categories",
+          "slideTitle": "Food list categories",
+          "slideDescription": "The list of dishes includes categories by time of consumption (breakfast, lunch, dinner, etc.) and by ingredients (chicken, pork, seafood, etc.). Dishes are filtered by clicking on a category in the slider above the list. Custom pagination is also implemented."
+        },
+        {
+          "id": 10,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718798/portf/So-Yummy/5_jceemc.jpg",
+          "alt": "The form of creating your own recipe",
+          "slideTitle": "Form for creating your own recipe",
+          "slideDescription": "The form for creating your own recipe includes the following fields: the name of the recipe, a short description, a photo of the recipe (optional), category, cooking time, ingredients (name and quantity), in the field how to cook, the user describes the algorithm step by step, each new paragraph will be transformed into a list string. All fields are validated."
+        },
+        {
+          "id": 11,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718801/portf/So-Yummy/7_a6eurs.jpg",
+          "alt": "My recipes",
+          "slideTitle": "My recipes",
+          "slideDescription": "After successfully completing the recipe creation form, the recipe will be added to the list on the 'My Recipes' tab. The attached recipe can be viewed or deleted."
+        },
+        {
+          "id": 12,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723718799/portf/So-Yummy/6_zbk2uv.jpg",
+          "alt": "Achievement system",
+          "slideTitle": "Achievement system",
+          "slideDescription": "Each user receives a congratulatory message after completing some achievements."
+        }
+      ],
+      "tech": [
+        {
+          "id": 1,
+          "techName": "react",
+          "svgName": "react",
+          "useDescription": "A JavaScript library for building user interfaces that allows you to build components and efficiently manage state for dynamic web applications."
+        },
+        {
+          "id": 2,
+          "techName": "formik",
+          "svgName": "formik",
+          "useDescription": "A library for state management and validation of forms in React, which simplifies working with forms and their processing."
+        },
+        {
+          "id": 3,
+          "techName": "yup",
+          "svgName": "react",
+          "useDescription": "A JavaScript data validation library that allows you to create schemas for checking forms and objects against defined rules."
+        },
+        {
+          "id": 4,
+          "techName": "axios",
+          "svgName": "axios",
+          "useDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, saepe!"
+        },
+        {
+          "id": 5,
+          "techName": "redux",
+          "svgName": "redux",
+          "useDescription": "A library for state management in JavaScript applications that uses a single global state and allows you to manage it through dispatcher and reducer functions."
+        },
+        {
+          "id": 6,
+          "techName": "react-router-dom",
+          "svgName": "react",
+          "useDescription": "A library for implementing routing in React applications, which allows you to create routes and manage navigation between various components and pages."
+        },
+        {
+          "id": 7,
+          "techName": "prop-types",
+          "svgName": "react",
+          "useDescription": "A library for checking the types of properties (props) in React components, which helps to ensure the correctness of the data passed to the components."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "currentLang": "en",
+
+      "title": "Slim Mom (team project)",
+      "mainImgDesktop": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723738953/portf/Slim-Mom/desktop_crshpu.png",
+      "mainImgTablet": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723738945/portf/Slim-Mom/tablet_kttrsu.png",
+      "mainImgMobile": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723738952/portf/Slim-Mom/mobile_iv6cdg.png",
+      "anchor": "https://github.com/Katya-Kondratchuk/SlimMom",
+      "link": "https://katya-kondratchuk.github.io/SlimMom/calculator",
+
+      "description": "Team project Slim Mom project is an application for losing weight. Provides access to a weight/calorie calculator and allows you to design your own weight loss diet. In the project, I was engaged in the process of entering my data into the calorie calculation calculator. He also took part in the development of a side menu that reflects the amount of calories consumed/daily norm. The project is also implemented in three languages: English, Ukrainian, French.",
+      "slides": [
+        {
+          "id": 1,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723738950/portf/Slim-Mom/logIn_vpfbhb.jpg",
+          "alt": "Authorization form",
+          "slideTitle": "Authorization form",
+          "slideDescription": "The authorization form contains email and password fields, all input fields are validated."
+        },
+        {
+          "id": 2,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723738947/portf/Slim-Mom/4_mvg9nk.jpg",
+          "alt": "Main page",
+          "slideTitle": "Main page",
+          "slideDescription": "The main page is divided into two sections: on the left is a calendar with purchases for each day, on the right is a calorie calculator that is calculated from the list of dishes that can be entered in the search."
+        },
+        {
+          "id": 3,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723738948/portf/Slim-Mom/3_dpafli.jpg",
+          "alt": "Main page in French",
+          "slideTitle": "Main page in French",
+          "slideDescription": "Main page in French - all inscriptions on the site are translated into French and can be changed with a switch in the header"
+        },
+        {
+          "id": 4,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723738945/portf/Slim-Mom/2_scckj3.jpg",
+          "alt": "Main page in English",
+          "slideTitle": "Main page in English",
+          "slideDescription": "Main page in English - all inscriptions on the site are translated into English and can be changed with a switch in the header"
+        },
+        {
+          "id": 5,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723738945/portf/Slim-Mom/1_hj3vap.jpg",
+          "alt": "Form for entering your physical data",
+          "slideTitle": "Form for entering your physical data",
+          "slideDescription": "The user enters his physical data to calculate the daily caloric intake. The form includes: height, age, weight, desired weight, blood type. All fields are validated."
+        }
+      ],
+      "tech": [
+        {
+          "id": 1,
+          "techName": "react",
+          "svgName": "react",
+          "useDescription": "A JavaScript library for building user interfaces that allows you to build components and efficiently manage state for dynamic web applications."
+        },
+        {
+          "id": 2,
+          "techName": "formik",
+          "svgName": "formik",
+          "useDescription": "A library for state management and validation of forms in React, which simplifies working with forms and their processing."
+        },
+        {
+          "id": 3,
+          "techName": "yup",
+          "svgName": "react",
+          "useDescription": "A JavaScript data validation library that allows you to create schemas for checking forms and objects against defined rules."
+        },
+        {
+          "id": 4,
+          "techName": "axios",
+          "svgName": "axios",
+          "useDescription": "A library for managing state in JavaScript/React applications that provides automatic tracking of data changes and user interface updates."
+        },
+        {
+          "id": 5,
+          "techName": "redux",
+          "svgName": "redux",
+          "useDescription": "A library for state management in JavaScript applications that uses a single global state and allows you to manage it through dispatcher and reducer functions."
+        },
+        {
+          "id": 6,
+          "techName": "react-router-dom",
+          "svgName": "react",
+          "useDescription": "A library for implementing routing in React applications, which allows you to create routes and manage navigation between various components and pages."
+        },
+        {
+          "id": 7,
+          "techName": "prop-types",
+          "svgName": "react",
+          "useDescription": "A library for checking the types of properties (props) in React components, which helps to ensure the correctness of the data passed to the components."
+        },
+        {
+          "id": 8,
+          "techName": "react-i18next",
+          "svgName": "react",
+          "useDescription": "A library for internationalization in React applications that makes it easy to add support for multiple languages ​​and manage translations."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "currentLang": "en",
+
+      "title": "Filmoteka (team project)",
+      "mainImgDesktop": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723745582/portf/filmoteka/desktop_d6amam.png",
+      "mainImgTablet": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723745579/portf/filmoteka/tablet_oygm3f.png",
+      "mainImgMobile": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723745576/portf/filmoteka/mobile_x7rpmf.png",
+      "anchor": "Description 1",
+      "link": "https://dima-davidenko.github.io/filmoteka/",
+
+      "description": "Filmoteka portal, team project project. Gives the user access to a large number of movies. Allows you to create a list of desired movies to watch, mark the movie as watched, find out the necessary information about the movie and watch the trailer/the movie itself (on a third-party resource). During the development of the site, I was involved in styling and layout. It was interesting to work with a large database, configure filtering, implement user authorization using google and firebase. In general, the project is interesting and has practical application in the future.",
+      "slides": [
+        {
+          "id": 1,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723745566/portf/filmoteka/1_fjmiiz.jpg",
+          "alt": "Main page Filmoteka",
+          "slideTitle": "Filmoteka Main page",
+          "slideDescription": "Contains a search field, navigation, a filter menu, a list of movies with a rating. When hovering over the image of the film, a short description of the film appears."
+        },
+        {
+          "id": 2,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723745568/portf/filmoteka/3_lgfhuy.jpg",
+          "alt": "Filmoteka Main page",
+          "slideTitle": "Filmoteka Main page (Dark)",
+          "slideDescription": "Dark stylization of the main page."
+        },
+        {
+          "id": 3,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723745567/portf/filmoteka/2_wywqwu.jpg",
+          "alt": "Filter menu",
+          "slideTitle": "Filter menu",
+          "slideDescription": "The filter menu allows you to filter the output of tapes by: genre, audio language, rating, number of ratings, release date. You can also reset the selected filters by clicking the button."
+        },
+        {
+          "id": 4,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723745571/portf/filmoteka/4_k6mavv.jpg",
+          "alt": "Modal menu with information about the film",
+          "slideTitle": "Film information window",
+          "slideDescription": "When you click on the image of the movie, a window with information about the movie appears on the main screen. The window contains: title, short description, number of views, genres. There is also the possibility of re-rolling the movie trailer, watching the movie itself on a third-party resource, adding/unadding to the viewing queue or to the stream of watched tapes."
+        },
+        {
+          "id": 5,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723745573/portf/filmoteka/5_ofkjsm.jpg",
+          "alt": "List of watched movies.",
+          "slideTitle": "List of watched movies.",
+          "slideDescription": "When you add a movie to the watched, it is automatically added to the list of watched movies in the user menu."
+        },
+        {
+          "id": 6,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723745574/portf/filmoteka/6_apcn7e.jpg",
+          "alt": "Queue of movies to watch",
+          "slideTitle": "Queue of movies to watch",
+          "slideDescription": "When you add a movie to the movie queue to watch, it is automatically added to the queue in the user menu."
+        }
+      ],
+      "tech": [
+        {
+          "id": 1,
+          "techName": "firebase",
+          "svgName": "firebase",
+          "useDescription": "A platform for developing mobile and web applications that provides a set of tools and services such as real-time database, authentication, hosting and analytics."
+        },
+        {
+          "id": 2,
+          "techName": "dotEnv",
+          "svgName": "dotenv",
+          "useDescription": "A library for loading environment variables from an .env file into a Node.js application, allowing you to store sensitive data separately from code."
+        },
+        {
+          "id": 3,
+          "techName": "notiflix",
+          "svgName": "notification",
+          "useDescription": "A library for creating beautiful and customizable alerts, dialog boxes, and other messages in web applications."
+        },
+        {
+          "id": 4,
+          "techName": "axios",
+          "svgName": "axios",
+          "useDescription": "A library for managing state in JavaScript/React applications that provides automatic tracking of data changes and user interface updates."
+        }
+      ]
+    }
+  ]
+}

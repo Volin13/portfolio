@@ -3,10 +3,14 @@
   padding-bottom: 32px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  border-bottom: 1px solid $secondary_gray;
-
+  justify-content: space-between;
+  &-thumb {
+    box-shadow: 0 1px 4px $secondary_gray;
+    position: relative;
+    z-index: 3;
+  }
   &__navigation {
+    color: $primary_gray;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -22,24 +26,46 @@
 
   &__navLink {
     padding: 10px;
-
+    transition: all 300ms;
     border-radius: 8px;
     &-accent {
-      background-color: $primary_accent_color;
+      background-color: $primary_purple;
       padding-right: 40px;
+      color: $primary_white;
+      fill: $primary_white;
+      transition:
+        color 300ms,
+        fill 300ms;
     }
-    &__navLink:hover,
-    &__navLink:focus,
-    &__navLink:active {
-      background-color: $secondary_bg_color;
-      scale: 1.15;
+  }
+  &__navLink:hover,
+  &__navLink:focus,
+  &__navLink:active {
+    background-color: $secondary_bg_color;
+    color: $primary_purple;
+    scale: 1.15;
+  }
+  &__navLink-accent:hover,
+  &__navLink-accent:focus,
+  &__navLink-accent:active {
+    color: $primary_purple;
+  }
+  &__navLang-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    &::not(:last-of-type) {
+      border-right: 1px solid $primary_gray;
+    }
+    &:hover {
+      text-decoration: underline;
     }
   }
   &__telText {
     position: relative;
   }
   &__telIcon {
-    fill: white;
     height: 30px;
     width: 30px;
   }
@@ -50,25 +76,23 @@
   position: absolute;
   z-index: 2;
   right: -30px;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
-  // background-image: url('../assets/main/container.jpg');
-  background-image: url('../assets/header/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg');
-  background-size: cover;
   fill: white;
-  stroke: white;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="24px" height="24px"><path fill="%23ffffff" d="M88.723,12.142C76.419,17.238,23.661,39.091,9.084,45.047c-9.776,3.815-4.053,7.392-4.053,7.392 s8.345,2.861,15.499,5.007c7.153,2.146,10.968-0.238,10.968-0.238l33.62-22.652c11.922-8.107,9.061-1.431,6.199,1.431 c-6.199,6.2-16.452,15.975-25.036,23.844c-3.815,3.338-1.908,6.199-0.238,7.63c6.199,5.246,23.129,15.976,24.082,16.691 c5.037,3.566,14.945,8.699,16.452-2.146c0,0,5.961-37.435,5.961-37.435c1.908-12.637,3.815-24.321,4.053-27.659 C97.307,8.804,88.723,12.142,88.723,12.142z"/></svg>');
+  background-size: cover;
   transition: transform 0.3s;
 }
-// .header__telText::after {
-//   animation: vibrate 0.1s infinite;
-// }
 
-.header__navBtn:hover .header__telText::after,
-.header__navBtn:focus .header__telText::after,
-.header__navBtn:active .header__telText::after {
+.header__navLink:hover .header__telText::after,
+.header__navLink:focus .header__telText::after,
+.header__navLink:active .header__telText::after {
   animation: vibrate 0.3s infinite;
+  fill: $primary_purple;
+  stroke: $primary_purple;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="24px" height="24px"><path fill="%235700ff" d="M88.723,12.142C76.419,17.238,23.661,39.091,9.084,45.047c-9.776,3.815-4.053,7.392-4.053,7.392 s8.345,2.861,15.499,5.007c7.153,2.146,10.968-0.238,10.968-0.238l33.62-22.652c11.922-8.107,9.061-1.431,6.199,1.431 c-6.199,6.2-16.452,15.975-25.036,23.844c-3.815,3.338-1.908,6.199-0.238,7.63c6.199,5.246,23.129,15.976,24.082,16.691 c5.037,3.566,14.945,8.699,16.452-2.146c0,0,5.961-37.435,5.961-37.435c1.908-12.637,3.815-24.321,4.053-27.659 C97.307,8.804,88.723,12.142,88.723,12.142z"/></svg>');
 }
 
 // MENU
@@ -130,14 +154,23 @@
   width: 0;
 }
 
-@media screen and (min-width: 576px) {
+.active {
+  scale: 1.1;
+  box-shadow: 0 0 20px $secondary_purple;
 }
+
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 22px;
     padding-bottom: 22px;
     &__navigation {
       gap: 15px;
+    }
+    &__navLink {
+      padding: 12px;
+      &-accent {
+        padding-right: 40px;
+      }
     }
   }
 }
@@ -149,7 +182,7 @@
       transform: translate(0, 0);
       width: auto;
       flex-direction: row;
-      gap: 25px;
+      gap: 5px;
       font-size: 18px;
     }
     .menu__body {
@@ -165,12 +198,23 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .header {
+    &__navigation {
+      gap: 20px;
+    }
+  }
 }
 @media screen and (min-width: 1440px) {
   .header {
     &__navigation {
-      gap: 55px;
+      gap: 45px;
       font-size: 20px;
+    }
+    &__navLink {
+      padding: 14px;
+      &-accent {
+        padding-right: 40px;
+      }
     }
   }
 }

@@ -15,8 +15,10 @@
     border: 1px solid transparent;
   }
   &__imageBackground {
-    object-fit: contain;
+    object-fit: cover;
     object-position: left bottom;
+    width: 100%;
+    height: 100%;
   }
   &__photo {
     position: absolute;
@@ -24,22 +26,26 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    width: 198px;
+    width: 90%;
   }
   &__icon {
     position: absolute;
-    z-index: 3;
+    opacity: 0;
+    z-index: 2;
     width: 150px;
     height: 120px;
     &-top {
       top: -12px;
       left: -12px;
+      animation: fadeIn1 2s ease-out forwards;
     }
 
     &-bottom {
       right: -12px;
       bottom: -12px;
       transform: rotate(180deg);
+
+      animation: fadeIn2 2s ease-out forwards;
     }
   }
 }
@@ -48,6 +54,7 @@
   text-align: center;
   &__mainTitle {
     margin-bottom: 10px;
+    text-align: start;
   }
   &__text {
     margin-bottom: 24px;
@@ -82,13 +89,6 @@
       height: 330px;
       width: 270px;
     }
-    &__imageBackground {
-      object-fit: contain;
-      object-position: left bottom;
-    }
-    // &__photo {
-    //   width: 422px;
-    // }
   }
 }
 @media screen and (min-width: 768px) {
@@ -101,15 +101,11 @@
     padding-right: 0;
 
     &__imageContainer {
-      height: 377px;
-      width: 300px;
-    }
-    &__imageBackground {
-      object-fit: contain;
-      object-position: left bottom;
+      height: calc(70vh - 80px);
+      width: 50%;
     }
     &__photo {
-      width: 300px;
+      width: 100%;
     }
     &__helloBtn {
       margin-bottom: 20px;
@@ -118,18 +114,10 @@
     &__icon {
       width: 180px;
       height: 160px;
-      &-top {
-        top: -20px;
-        left: -20px;
-      }
-      &-bottom {
-        right: -20px;
-        bottom: -20px;
-      }
     }
   }
   .heroTextSection {
-    max-width: 450px;
+    max-width: 320px;
     text-align: start;
 
     &__btnGroup {
@@ -150,35 +138,20 @@
 @media screen and (min-width: 990px) {
 }
 @media screen and (min-width: 1280px) {
-}
-@media screen and (min-width: 1440px) {
   .hero {
-    max-width: 1440px;
-    padding-left: 80px;
+    max-width: 1280px;
+    padding-left: 60px;
     padding-right: 0;
-
     &__imageContainer {
-      height: 815px;
-      width: 602px;
-    }
-    &__imageBackground {
-      object-fit: contain;
-      object-position: left bottom;
+      height: calc(100vh - 128px);
+      width: 50%;
     }
     &__photo {
-      width: 422px;
+      width: 80%;
     }
     &__icon {
-      width: 388px;
-      height: 349px;
-      // &-top{
-      //   top: -20px;
-      //   left: -20px;
-      // }
-      // &-bottom{
-      //   right: -20px;
-      //   bottom: -20px;
-      // }
+      width: 230px;
+      height: 230px;
     }
   }
   .heroTextSection {
@@ -200,22 +173,24 @@
     }
   }
 }
+@media screen and (min-width: 1440px) {
+  .hero {
+    max-width: 1440px;
+    padding-left: 80px;
+    padding-right: 0;
+    &__icon {
+      width: 300px;
+      height: 300px;
+    }
+    &__photo {
+      width: 70%;
+    }
+  }
+}
 @media screen and (min-width: 1920px) {
   .hero {
     max-width: 1920px;
     padding-left: 162px;
-
-    &__imageContainer {
-      height: 977px;
-      width: 815px;
-    }
-    &__imageBackground {
-      object-fit: contain;
-      object-position: left bottom;
-    }
-    &__photo {
-      width: 655px;
-    }
   }
 
   .heroTextSection {
@@ -238,5 +213,16 @@
     &__text {
       margin-bottom: 50px;
     }
+  }
+}
+@keyframes fadeIn2 {
+  to {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
+@keyframes fadeIn1 {
+  to {
+    opacity: 1;
   }
 }
