@@ -143,42 +143,50 @@ module.exports = {
     port: 9000,
     hot: true,
     historyApiFallback: {
+      // rewrites: [
+      //   {
+      //     from: /^\/projects\/(\d+)(\?lang=(en|uk))?$/,
+      //     to: context => {
+      //       const searchParams = new URLSearchParams(context.parsedUrl.search);
+      //       const id = context.parsedUrl.pathname.split('/').pop();
+      //       const lang = searchParams.get('lang') || 'uk';
+      //       return `/projectDetails-${id}_${lang}.html`;
+      //     },
+      //   },
+      //   { from: /^\/$/, to: '/index_uk.html' },
+      //   {
+      //     from: /^\/(\?lang=uk)?$/,
+      //     to: '/index_uk.html',
+      //   },
+      //   {
+      //     from: /^\/(\?lang=en)?$/,
+      //     to: '/index_en.html',
+      //   },
+      //   {
+      //     from: /.*\.webmanifest$/,
+      //     to: '/site.webmanifest',
+      //   },
+      //   {
+      //     from: /^\/gallery(\?lang=en)?$/,
+      //     to: '/gallery_en.html',
+      //   },
+      //   {
+      //     from: /^\/gallery(\?lang=uk)?$/,
+      //     to: '/gallery_uk.html',
+      //   },
+      // ],
       rewrites: [
+        { from: /^\/portfolio\/$/, to: '/portfolio/index_uk.html' },
+        { from: /^\/portfolio\/(\?lang=uk)?$/, to: '/portfolio/index_uk.html' },
+        { from: /^\/portfolio\/(\?lang=en)?$/, to: '/portfolio/index_en.html' },
         {
-          from: /^\/projects\/(\d+)(\?lang=(en|uk))?$/,
-          to: context => {
-            const searchParams = new URLSearchParams(context.parsedUrl.search);
-            const id = context.parsedUrl.pathname.split('/').pop();
-            const lang = searchParams.get('lang') || 'uk';
-            return `/projectDetails-${id}_${lang}.html`;
-          },
-        },
-        { from: /^\/$/, to: '/index_uk.html' },
-        {
-          from: /^\/(\?lang=uk)?$/,
-          to: '/index_uk.html',
+          from: /^\/portfolio\/gallery(\?lang=en)?$/,
+          to: '/portfolio/gallery_en.html',
         },
         {
-          from: /^\/(\?lang=en)?$/,
-          to: '/index_en.html',
+          from: /^\/portfolio\/gallery(\?lang=uk)?$/,
+          to: '/portfolio/gallery_uk.html',
         },
-        {
-          from: /.*\.webmanifest$/,
-          to: '/site.webmanifest',
-        },
-        {
-          from: /^\/gallery(\?lang=en)?$/,
-          to: '/gallery_en.html',
-        },
-        {
-          from: /^\/gallery(\?lang=uk)?$/,
-          to: '/gallery_uk.html',
-        },
-
-        // {
-        //   from: /^(?!\/assets\/).*$/,
-        //   to: '/index.html',
-        // },
       ],
     },
   },
