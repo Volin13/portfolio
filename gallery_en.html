@@ -1,0 +1,33 @@
+<html lang="en"><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Portfolio</title><link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicon/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon/favicon-16x16.png"/><link rel="manifest" href="/src/assets/favicon/site.webmanifest"/><link rel="mask-icon" href="/src/assets/favicon/safari-pinned-tab.svg" color="#5bbad5"/><meta name="msapplication-TileColor" content="#da532c"/><meta name="theme-color" content="#ffffff"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"/><style>.loader { position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background-color: rgba(255, 255, 255, 0.8); display: flex;
+      justify-content: center; align-items: center; z-index: 9996; } .cup {
+      position: relative; z-index: 9999; width: 20vh; height: 25vh; border: 1vh
+      solid #262626; border-top: 2vh solid transparent; border-radius: 15px;
+      border-top-left-radius: 5px; border-top-right-radius: 5px; box-shadow: 0 0
+      0 2vh #bc99ff, 0 20px 35px rgba(0, 0, 0, 0.5); animation: sway 2s
+      ease-in-out infinite; transform-origin: 100% 50%; } .cupHandle { position:
+      absolute; z-index: 9996; width: 50%; height: 80%; right: -62%; border: 2vh
+      solid #bc99ff; top: 10%; border-top-right-radius: 35px;
+      border-bottom-right-radius: 35px; } .cupContent { position: relative;
+      overflow: hidden; background-color: rgba(188, 153, 255, 0.5); z-index:
+      9998; height: 100%; width: 100%; } .wave { position: absolute; bottom: 0;
+      left: -200%; width: 400%; height: 50%; background: rgb(41, 27, 25);
+      border-top-right-radius: 50%; border-top-left-radius: 50%; animation:
+      waveMove 3s infinite linear; } .wave:nth-child(2) { bottom: 5px;
+      animation: waveMove 3s infinite linear reverse; } @media screen and
+      (max-width: 700px) { .cup { width: 10vh; height: 14vh; border: 1vh solid
+      #262626; border-top: 1vh solid transparent; box-shadow: 0 0 0 1vh #bc99ff,
+      0 20px 35px rgba(0, 0, 0, 0.5); } .cupHandle { border: 1vh solid #bc99ff;
+      } } @keyframes waveMove { 0% { transform: translate(0, 10%); } 100% {
+      transform: translate(40%, 40%); } } @keyframes fadeOut { from { transform:
+      translateY(0); opacity: 1; } to { transform: translateY(100%); opacity:
+      0.2; } } @keyframes sway { 0% { transform: rotate(0deg); } 25% {
+      transform: rotate(-5deg); } 50% { transform: rotate(0deg); } 75% {
+      transform: rotate(5deg); } 100% { transform: rotate(0deg); } }</style><script defer="defer" src="/common.8f4a6183560c0c25d50a.js"></script><script defer="defer" src="/gallery.6c3356acb1fccadef91d.js"></script></head><body><div id="loader" class="loader"><div class="cup spiner" id="content"><div class="cupHandle" style="width: 50%; height: 80%"></div><div class="cupContent"><div class="wave"></div><div class="wave"></div></div></div></div><div id="content" class="content"><div class="headerThumb"></div><div class="gallery container"><h2 class="gallery__title gallery__title-decoration">My latest works:</h2><ul class="gallery__list"></ul></div><div class="footerThumb"></div></div><script>document.addEventListener('DOMContentLoaded', function () { const loader =
+      document.getElementById('loader'); const content =
+      document.getElementById('content'); function showContent() {
+      content.style.display = 'block'; } function hideLoader() {
+      loader.style.animation = 'fadeOut 1.5s ease-out forwards';
+      loader.addEventListener('animationend', function () { loader.style.display
+      = 'none'; }); } window.addEventListener('load', function () {
+      showContent(); hideLoader(); }); });</script></body></html>

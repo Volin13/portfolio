@@ -1,0 +1,9 @@
+<html lang="uk"><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Олег Кухаришин</title><link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicon/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon/favicon-16x16.png"/><link rel="manifest" href="/src/assets/favicon/site.webmanifest"/><link rel="mask-icon" href="/src/assets/favicon/safari-pinned-tab.svg" color="#5bbad5"/><meta name="msapplication-TileColor" content="#da532c"/><meta name="theme-color" content="#ffffff"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"/><script defer="defer" src="/common.8f4a6183560c0c25d50a.js"></script><script defer="defer" src="/index.842948799877637ec37c.js"></script></head><body><header id="header" class="headerThumb"></header><div id="main"></div><div id="about"></div><div id="samples"></div><footer id="footer" class="footerThumb"></footer><script>document.addEventListener('DOMContentLoaded', () => { const langInStorage
+      = localStorage.getItem('lang'); const browserLang =
+      navigator.language.slice(0, 2); const defaultLang = 'uk'; const
+      currentLang = langInStorage || (browserLang === 'en' ? 'en' :
+      defaultLang); const urlParams = new
+      URLSearchParams(window.location.search); const currentPage =
+      window.location.pathname; if (!urlParams.has('lang')) { if (currentPage
+      === '/' || currentPage === '/index.html') { window.location.href =
+      `?lang=${currentLang}`; } } });</script></body></html>
