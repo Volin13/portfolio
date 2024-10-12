@@ -68,8 +68,6 @@ module.exports = {
   },
   plugins: [
     ...languages.map(lang => {
-      console.log(translationsContext[lang]);
-
       return new HtmlWebpackPlugin({
         filename: `index_${lang}.html`,
         template: `./src/index.hbs`,
