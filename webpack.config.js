@@ -176,16 +176,16 @@ module.exports = {
       //   },
       // ],
       rewrites: [
-        { from: /^\/portfolio\/$/, to: '/index_uk.html' },
-        { from: /^\/portfolio\/(\?lang=uk)?$/, to: '/index_uk.html' },
-        { from: /^\/portfolio\/(\?lang=en)?$/, to: '/index_en.html' },
+        { from: /^\/portfolio\/$/, to: '/portfolio/index_uk.html' },
+        { from: /^\/portfolio\/(\?lang=uk)?$/, to: '/portfolio/index_uk.html' },
+        { from: /^\/portfolio\/(\?lang=en)?$/, to: '/portfolio/index_en.html' },
         {
           from: /^\/portfolio\/gallery(\?lang=en)?$/,
-          to: '/gallery_en.html',
+          to: '/portfolio/gallery_en.html',
         },
         {
           from: /^\/portfolio\/gallery(\?lang=uk)?$/,
-          to: '/gallery_uk.html',
+          to: '/portfolio/gallery_uk.html',
         },
       ],
     },
