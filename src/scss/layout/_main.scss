@@ -53,9 +53,18 @@
   max-width: 358px;
   text-align: center;
   &__mainTitle {
+    text-shadow:
+      0 0 7px rgba(255, 255, 255, 0.3),
+      0 0 3px rgba(255, 255, 255, 0.3);
     margin-bottom: 10px;
     text-align: start;
   }
+
+  &__animation {
+    height: 48px;
+    overflow: hidden;
+  }
+
   &__text {
     margin-bottom: 24px;
   }
@@ -128,6 +137,7 @@
     }
 
     &__mainTitle {
+      max-width: 315px;
       margin-bottom: 10px;
     }
     &__text {
@@ -186,6 +196,14 @@
       width: 70%;
     }
   }
+  .heroTextSection {
+    &__mainTitle {
+      max-width: 450px;
+    }
+    &__animation {
+      height: 75px;
+    }
+  }
 }
 @media screen and (min-width: 1920px) {
   .hero {
@@ -208,13 +226,68 @@
       max-width: 787px;
     }
     &__mainTitle {
+      max-width: 515px;
+
       margin-bottom: 10px;
     }
+    &__animation {
+      height: 87px;
+    }
+
     &__text {
       margin-bottom: 50px;
     }
   }
 }
+.heroTextSection__animation > div > div {
+  padding: 0px 4px;
+  height: 5.81rem;
+  margin-bottom: 5.81rem;
+  display: inline-block;
+}
+.animated {
+  animation: text-animation 8s infinite;
+}
+.first div {
+  background-color: $secondary_purple;
+}
+.second div {
+  background-color: $primary_yellow;
+}
+.third div {
+  background-color: $primary_accent_color;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: -23.24rem;
+  }
+  20% {
+    margin-top: -23.24rem;
+  }
+  25% {
+    margin-top: -17.43rem;
+  }
+  30% {
+    margin-top: -11.62rem;
+  }
+  50% {
+    margin-top: -11.62rem;
+  }
+  55% {
+    margin-top: -5.81rem;
+  }
+  60% {
+    margin-top: 0;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -23.24rem;
+  }
+}
+
 @keyframes fadeIn2 {
   to {
     opacity: 1;

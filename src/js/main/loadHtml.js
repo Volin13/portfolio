@@ -1,7 +1,6 @@
 import headerHTML from '../../partials/header.html';
 import headerTemplate from '../../templates/header.hbs';
 import translations from '../../data/translations.json';
-
 import mainHTML from '../../partials/main.html';
 import mainTemplate from '../../templates/main.hbs';
 import footerHTML from '../../partials/footer.html';
@@ -50,5 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       footer.innerHTML = footerHTML;
     }
+  });
+
+  const helloBtn = document.getElementById('greetings');
+  const nameLable = document.getElementById('atimateEl');
+  helloBtn.addEventListener('click', function () {
+    nameLable.classList.toggle('animated');
   });
 });

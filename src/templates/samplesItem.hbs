@@ -1,6 +1,8 @@
 {{#each items}}
   <div class='samples__item mainSwiper__slide swiper-slide' style='height: 97%'>
-    <a target='_blank' href='projects/{{id}}'>
+    <a target='_blank' 
+    href='/portfolio/projectDetails-{{id}}_{{currentLang}}'
+    >
       <h3 class='mainSwiper__title'>{{this.title}}</h3>
     </a>
     <div
@@ -14,7 +16,11 @@
             class='swiper-slide swiper-zoom-container'
             style='transition: opacity 1s ease-in-out'
           >
-            <a target='_blank' href='projects/{{../id}}?lang={{../currentLang}}'>
+            <a target='_blank' 
+          href='/portfolio/projectDetails-{{../id}}_{{../currentLang}}'
+            {{!-- href='?page=projecDetails-{{../id}}&lang={{../currentLang}}' --}}
+
+            >
               <img src={{this.src}} alt={{this.alt}} loading='lazy' />
               <div class='swiper-lazy-preloader'></div>
             </a>

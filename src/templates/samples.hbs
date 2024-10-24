@@ -9,7 +9,11 @@
     </div>
     <div class='swiper-pagination mainSwiper__pagination'></div>
   </div>
-  <a href='/gallery?lang=uk' class='samples__galleryLink'>
+  <a
+    {{!-- href='?page=gallery&lang={{lang}}' --}}
+    href='/portfolio/gallery_{{lang}}'
+    class='samples__galleryLink'
+  >
     <button class='samples__galleryBtn'>
       <span>{{samplesButton}}</span>
       <svg class='samples__galleryBtn-image' viewBox='0 0 13 10'>

@@ -1,53 +1,57 @@
 <main class='hero'>
   <div>
     <div class='heroTextSection'>
-      <button class='heroTextSection__helloBtn'>Click...</button>
+      <button id='greetings' class='heroTextSection__helloBtn'>👋 Click...</button>
       <div class='heroTextSection__textThumb'>
         <h1 class='heroTextSection__mainTitle'>
           {{mainTitle}}
+          <div class='heroTextSection__animation'>
+            <div id='atimateEl'>
+              <div class='first'><div>{{name}}</div></div>
+              <div class='second'><div>Web Developer</div></div>
+              <div class='third'><div>Full-stack</div></div>
+            </div>
+          </div>
         </h1>
+
         <p class='heroTextSection__text'>
           {{shortBio}}
         </p>
       </div>
-      <!-- <div class="heroTextSection__btnGroup">
-        <button class="heroTextSection__btn">Hello!</button>
-        <button class="heroTextSection__btn">Hello!</button>
-      </div> -->
     </div>
   </div>
   <div class='hero__imageContainer'>
     <picture>
       <source
-        srcset='/assets/container.jpg 1x'
+        srcset='assets/container.jpg 1x'
         type='image/avif'
         media='(min-width:1920px)'
       />
       <source
-        srcset='/assets/containertablet.jpg 1x'
+        srcset='assets/containertablet.jpg 1x'
         type='image/avif'
         media='(min-width:767px)'
       />
       <source
-        srcset='/assets/containerMobile.jpg 1x'
+        srcset='assets/containerMobile.jpg 1x'
         type='image/avif'
         media='(max-width:767px)'
       />
       <img
-        src='/assets/container.jpg'
+        src='assets/container.jpg'
         alt='photo background'
         class='hero__imageBackground'
       />
     </picture>
     <svg class='hero__icon hero__icon-top'>
-      <use href='/assets/sprite.svg#icon-blocksMainImg'></use>
+      <use href='/portfolio/assets/sprite.svg#icon-blocksMainImg'></use>
     </svg>
     <svg class='hero__icon hero__icon-bottom'>
-      <use href='/assets/sprite.svg#icon-blocksMainImg'></use>
+      <use href='/portfolio/assets/sprite.svg#icon-blocksMainImg'></use>
     </svg>
     <img
       class='hero__photo'
-      src='/assets/oleh.webp'
+      src='assets/oleh.webp'
       alt='Oleh Kukharyshyn photo'
     />
   </div>

@@ -1,17 +1,22 @@
 <div class='header-thumb'>
   <div class='container header'>
-    <a href='/?lang={{lang}}' class='logo'>{{name}}</a>
+    <a
+      {{!-- href='?page=index&lang={{lang}}' --}}
+      href='/portfolio/index_{{lang}}'
+      {{!-- <a href='/?lang={{lang}}' --}}
+      class='logo'
+    >{{name}}</a>
     <div class='menu__body'>
       <nav>
         <ul class='header__navigation'>
           <li class='header__navLink'>
-            <a href='/'>{{home}} </a>
+            <a href='/portfolio/index_{{lang}}'>{{home}} </a>
           </li>
           <li class='header__navLink'>
             <a data-goto='about' href='#'>{{about}} </a>
           </li>
           <li class='header__navLink'>
-            <a href='/gallery?lang={{lang}}'>{{portfolio}} </a>
+            <a href='/portfolio/gallery_{{lang}}'>{{portfolio}} </a>
           </li>
           <li class='header__navLink'>
             <a data-goto='contacts' href='#'>{{contacts}} </a>
