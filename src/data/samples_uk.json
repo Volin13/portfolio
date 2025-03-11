@@ -583,7 +583,7 @@
       "mainImgDesktop": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723745582/portf/filmoteka/desktop_d6amam.png",
       "mainImgTablet": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723745579/portf/filmoteka/tablet_oygm3f.png",
       "mainImgMobile": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1723745576/portf/filmoteka/mobile_x7rpmf.png",
-      "anchor": "Description 1",
+      "anchor": "https://github.com/Dima-Davidenko/filmoteka",
       "link": "https://dima-davidenko.github.io/filmoteka/",
 
       "description": "Портал Filmoteka, командний проект. Дає користувачу доступ до великої кількості кінострічок. Дає можливість сформувати список бажаних до перегляду фільмів, відмітити фільм як переглянутий, дізнатись про фільм необхідну інформацію і переглянути трейлер/сам фільм (на сторонньому ресурсі). Під час розробки сайту я займався стилізацією та версткою. Було цікаво попрацювати з великою базою даних, налаштувати фільтрацію, реалізувати авторизацію користувача за допомогою google та firebase. Загалом проект цікавий, має практичне застосування у майбутньому.",
@@ -655,6 +655,73 @@
           "techName": "axios",
           "svgName": "axios",
           "useDescription": "Бібліотека для управління станом у JavaScript/React-додатках, яка забезпечує автоматичне відстеження змін у даних і оновлення інтерфейсу користувача."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "currentLang": "uk",
+
+      "title": "M-partner",
+      "mainImgDesktop": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1741709500/portf/mpartner/nbm4sjatqqvmgafwnpxz.png",
+      "mainImgTablet": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1741709499/portf/mpartner/upjjj4rbnioeyyty2zdg.png",
+      "mainImgMobile": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1741709499/portf/mpartner/p4afyr3a6ybfja6v7byb.png",
+      "anchor": "https://github.com/Volin13/mpartnet",
+      "link": "https://dima-davidenko.github.io/filmoteka/",
+
+      "description": "M-partner, досить проста робота - сайт-лендінг для мого знаймого, який займається працевлаштуванням за кордоном. Незважаючи на те що робота досить проста, я багато сил вклав в дизайн. Можна вважати моїм першим комерційним проектом. Я отримав цікавий досвід покупки домену, деплоя, індексації сайту в гугл і тп. Було також цікаво попрацювати з мета тегами і бульше дізнатись про SEO.",
+      "slides": [
+        {
+          "id": 1,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1741711179/portf/mpartner/vn40pzuj109kd7yjyawh.png",
+          "alt": "хедер M-partner",
+          "slideTitle": "M-partner хедер",
+          "slideDescription": "Так як найбільшу важливість у всьому сайті мають контакти фірми, я вирішив максимально виділити їх на стартовій сторінці, поряд з пульсуючим логотипом."
+        },
+        {
+          "id": 2,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1741711179/portf/mpartner/zfpiqlpiogh1wknt7zkv.png",
+          "alt": "M-partner навігація",
+          "slideTitle": "M-partner меню навігації",
+          "slideDescription": "Меню навігації, клієн захотів що воно було видиме постійно, тож по кліку на лого посилання переноситиме користувача до нього."
+        },
+        {
+          "id": 3,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1741711179/portf/mpartner/b0sutq1v7c9d0mflx2or.png",
+          "alt": "M-partner about секція",
+          "slideTitle": "M-partner about секція",
+          "slideDescription": "Загалом цей лендінг несе виключно інформативну задачу, основне наповнення це опис фірми та алгоритм взаємодії з ними."
+        },
+        {
+          "id": 4,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1741711179/portf/mpartner/lygyvgfxrwjvvnxkas7v.png",
+          "alt": "M-partner contacts секція",
+          "slideTitle": "M-partner contacts секція",
+          "slideDescription": "Футер являє собою секцію з контактами. Я вирішив дублювати їх як і в хедері, для зручності користувачів"
+        }
+      ],
+      "tech": [
+        {
+          "id": 1,
+          "techName": "java-script",
+          "svgName": "js",
+          "useDescription": "JavaScript – мова програмування для веб-розробки, що працює в браузері."
+        },        {
+          "id": 2,
+          "techName": "swiper",
+          "svgName": "swiper",
+          "useDescription": "Swiper – гнучка бібліотека JavaScript для створення слайдерів із підтримкою жестів, адаптивності та анімацій."
+        },        {
+          "id": 3,
+          "techName": "css3",
+          "svgName": "css3",
+          "useDescription": "CSS3 – остання версія CSS, що додає анімації, градієнти, flexbox, grid і покращену стилізацію веб-сторінок."
+        },
+        {
+          "id": 4,
+          "techName": "webpack",
+          "svgName": "webpack",
+          "useDescription": "Webpack – модульний збирач для JavaScript, що оптимізує, бандлить файли та керує залежностями."
         }
       ]
     }

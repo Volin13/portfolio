@@ -656,6 +656,74 @@
           "useDescription": "A library for managing state in JavaScript/React applications that provides automatic tracking of data changes and user interface updates."
         }
       ]
+    },
+    {
+      "id": "6",
+      "currentLang": "en",
+
+      "title": "M-partner",
+      "mainImgDesktop": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1741709500/portf/mpartner/nbm4sjatqqvmgafwnpxz.png",
+      "mainImgTablet": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1741709499/portf/mpartner/upjjj4rbnioeyyty2zdg.png",
+      "mainImgMobile": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1741709499/portf/mpartner/p4afyr3a6ybfja6v7byb.png",
+      "anchor": "https://github.com/Volin13/mpartnet",
+      "link": "https://dima-davidenko.github.io/filmoteka/",
+
+      "description": "M-partner, a fairly simple job - a landing page for my friend who is engaged in employment abroad. Despite the fact that the work is quite simple, I put a lot of effort into the design. It can be considered my first commercial project. I got an interesting experience buying a domain, deploying it, indexing the site in Google, etc. It was also interesting to work with meta tags and learn more about SEO.",
+      "slides": [
+        {
+          "id": 1,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1741711179/portf/mpartner/vn40pzuj109kd7yjyawh.png",
+          "alt": "Header M-partner",
+          "slideTitle": "M-partner header",
+          "slideDescription": "Since the company's contacts are of the greatest importance on the entire site, I decided to highlight them as much as possible on the start page, next to the pulsating logo."
+        },
+        {
+          "id": 2,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1741711179/portf/mpartner/zfpiqlpiogh1wknt7zkv.png",
+          "alt": "M-partner navigation menu",
+          "slideTitle": "M-partner navigation menu",
+          "slideDescription": "The navigation menu, the client wanted it to be visible all the time, so when clicking on the logo, the link would take the user to it."
+        },
+        {
+          "id": 3,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1741711179/portf/mpartner/b0sutq1v7c9d0mflx2or.png",
+          "alt": "M-partner about section",
+          "slideTitle": "M-partner about section",
+          "slideDescription": "In general, this landing page has an exclusively informative purpose, the main content is a description of the company and an algorithm for interacting with them."
+        },
+        {
+          "id": 4,
+          "src": "https://res.cloudinary.com/dwgpcl0nu/image/upload/v1741711179/portf/mpartner/lygyvgfxrwjvvnxkas7v.png",
+          "alt": "M-partner contacts section",
+          "slideTitle": "M-partner contacts section",
+          "slideDescription": "The footer is a section with contacts. I decided to duplicate them as in the header, for the convenience of users"
+        }
+      ],
+      "tech": [
+        {
+          "id": 1,
+          "techName": "java-script",
+          "svgName": "js",
+          "useDescription": "JavaScript is a programming language for web development that runs in the browser."
+        },        {
+          "id": 2,
+          "techName": "swiper",
+          "svgName": "swiper",
+          "useDescription": "Swiper is a flexible JavaScript library for creating sliders with support for gestures, responsiveness, and animations."
+        },        {
+          "id": 3,
+          "techName": "css3",
+          "svgName": "css3",
+          "useDescription": "CSS3 is the latest version of CSS, adding animations, gradients, flexbox, grids, and improved styling of web pages."
+        },
+        {
+          "id": 4,
+          "techName": "webpack",
+          "svgName": "webpack",
+          "useDescription": "Webpack is a modular JavaScript bundler that optimizes, bundles files, and manages dependencies."
+        }
+      ]
     }
+    
   ]
 }
