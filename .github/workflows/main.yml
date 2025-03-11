@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2  # Крок для налаштування Node.js
         with:
-          node-version: '14'  # Вказуємо потрібну версію Node.js
+          node-version: '18'  # Вказуємо потрібну версію Node.js
 
       - name: Install dependencies
         run: npm install  # Команда для встановлення залежностей
