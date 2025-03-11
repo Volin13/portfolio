@@ -22,4 +22,11 @@ jobs:
         run: npm install  # Команда для встановлення залежностей
 
       - name: Run build
-        run: npm run build 
+        run: npm run build  # Команда для створення білду
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3  # Плагін для деплою на GitHub Pages
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Автоматично генерується токен для доступу
+          publish_dir: ./dist  # Вказуємо директорію, в яку публікується білд (може бути інша, залежно від вашої конфігурації)
+          publish_branch: gh-pages  # Гілка для деплою (звичайно це gh-pages)
