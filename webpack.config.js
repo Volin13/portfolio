@@ -144,6 +144,10 @@ module.exports = {
           to: 'assets',
         },
         {
+          from: 'src/assets/main',
+          to: 'assets',
+        },
+        {
           from: 'src/assets/sprite.svg',
           to: 'assets',
         },
